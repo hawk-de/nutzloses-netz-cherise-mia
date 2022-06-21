@@ -1,0 +1,13 @@
+{
+  "name": "generative-gestaltung-2022-template",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "prettier": "prettier --write index.html index.js style.css"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@types/p5": "1.4.2",
+    "prettier": "2.7.1"
+  }
+}

@@ -1,0 +1,23 @@
+html {
+  font-size: 100%;
+} /*16px*/
+
+body {
+  background-color: white;
+  display: flex;
+  margin: 0 0;
+  color: #1d2429;
+}
+/*
+ see A Complete Guide to Flexbox
+  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+ */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.flex-item {
+  align-self: center;
+}
