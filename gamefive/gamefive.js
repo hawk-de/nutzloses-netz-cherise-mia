@@ -5,6 +5,7 @@ let h=1000;
 function setup() {
 mode = 0;
 createCanvas(1000,1000);
+
 }
 
 function draw() {
