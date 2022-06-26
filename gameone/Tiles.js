@@ -1,4 +1,4 @@
-class Bubble {
+class Tile {
 
     constructor(x,y) {
     
