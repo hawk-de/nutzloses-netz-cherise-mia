@@ -1,148 +1,146 @@
-body{
-  font-family: 'M PLUS 1 Code', sans-serif;
-  font-family: 'Press Start 2P', cursive;
-  background-color:black;
+body {
+  font-family: "M PLUS 1 Code", sans-serif;
+  font-family: "Press Start 2P", cursive;
+  background-color: black;
   padding-left: 10vw;
   padding-right: 10vw;
-  }
+}
 
-  .headerIMG {width: 100%;}
+.headerIMG {
+  width: 100%;
+}
 
-  .headline {
-    color:red;
-    font-weight: 800;
-    font-size: 3.5vw;
-  }
+.headline {
+  color: red;
+  font-weight: 800;
+  font-size: 3.5vw;
+}
 
-  .counter {
-    color:white;
-    margin-top: 30px;
-    font-weight:500;
-    font-size: 2vw;
-    text-align: center;
-  }
+.counter {
+  color: white;
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 2vw;
+  text-align: center;
+}
 
-  .divheadline {
-    display: flex;
-    justify-content: center;
-  }
+.divheadline {
+  display: flex;
+  justify-content: center;
+}
 
-  .divcounter {
-    display: flex;
-    justify-content: center;
-  }
+.divcounter {
+  display: flex;
+  justify-content: center;
+}
 
-  .IMGcontainer {
-    background-color:white;
-    padding: 16px;
-  }
+.IMGcontainer {
+  background-color: white;
+  padding: 16px;
+}
 
-  a {
-    display: flex;
-    justify-content: center;
-    color: white;
-    text-decoration: none;
-    margin-top: 10vw;
-    margin-bottom: 10vw;
-    font-weight: 100;
-    font-size: 4vw;
-  }
+a {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  font-weight: 100;
+  font-size: 4vw;
+}
 
-  a:hover {
-    color: red;
-    font-weight:bolder;
-  }
+a:hover {
+  color: red;
+  font-weight: bolder;
+}
 
-  .text {
-    color:red;
-    margin-top: 30px;
-    margin-bottom: 100px;
-    font-weight:500;
-    font-size: 2vw;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    line-height: 200%;
-  }
+.text {
+  color: red;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  font-weight: 500;
+  font-size: 2vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 200%;
+}
 
-  .Information {
-    color: white;
-    margin-bottom: 100px;
-    font-weight:400;
-    font-size: 0.9vw;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    line-height: 200%;
-  }
+.Information {
+  color: white;
+  margin-bottom: 100px;
+  font-weight: 400;
+  font-size: 0.9vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 200%;
+}
 
-  .linebreak {margin-top: 50vw;}
+.linebreak {
+  margin-top: 50vw;
+}
 
-  .btn-1 {
-    background: white;
-    color:  black;
-    border-radius: 30px;
-    transition: transform 0.3 ease;
-  }
+.btn-1 {
+  background: white;
+  color: black;
+  border-radius: 30px;
+  transition: transform 0.3 ease;
+}
 
-  .btn-1::after, .btn-1::after {
-content: "";
-position: absolute;
-opacity: 0.3;
-border-radius: inherit;
-width: 100%;
-height: 100%;
-left: 0;
-bottom: 0;
-z-index: -1;
-transition: transform 0.3 ease;
+.btn-1::after,
+.btn-1::after {
+  content: "";
+  position: absolute;
+  opacity: 0.3;
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: transform 0.3 ease;
 }
 
 .btn-1:hover {
-transform: translate(-12px, -12px);
+  transform: translate(-12px, -12px);
 }
 
 .btn-1:hover::after {
   transform: translate(6px, 6px);
-  }
+}
 
-  .btn-1:hover::before {
-    transform: translate(12px, 12px);
-    }
+.btn-1:hover::before {
+  transform: translate(12px, 12px);
+}
 
+html {
+  font-size: 100%;
+} /*16px*/
 
-    html {
-      font-size: 100%;
-    } /*16px*/
-  
-  
-    .bodyclass {
-     
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-    .flex-item {
-      align-self: center;
-    }
+.bodyclass {
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.flex-item {
+  align-self: center;
+}
 
+.timer {
+  height: px;
+  width: 100%;
+}
 
+#display {
+  color: white;
+  width: 100%;
+  font-size: 72px;
+  text-align: center;
+  margin: 0px auto;
+}
 
-
-
-    .timer{
-      height: px;
-      width: 100%;
-  }
-  
-  #display{
-    color: white;
-      width: 100%;
-      font-size: 72px;
-      text-align: center;
-      margin: 0px auto;
-  }
-  
-  .buttons{
-      text-align: center;
-  }
+.buttons {
+  text-align: center;
+}
