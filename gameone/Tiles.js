@@ -27,7 +27,7 @@ class Tile {
   }
 
     bounding() {
-      ellipseMode(CORNER);
+  
       stroke(255,50);
       strokeWeight(1);
       noFill();
