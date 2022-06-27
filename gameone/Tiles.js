@@ -12,24 +12,26 @@ class Tile {
   }
 
   clicked(px, py) {
-    if (px > this.x && px < this.x + 64 && py > this.y && py < this.y + 64) {
-      this.tiles = random(this.img);
+
+    this.px = px;
+    this.py = py;
+
+    if (px > this.x && px < this.x + 64 && py > this.y +32 && py < this.y + 48) {
+      this.tiles = random(img);
     }
   }
 
   show() {
-    stroke(255);
-    strokeWeight(4);
-    noFill();
+    
     image(this.tiles, this.x, this.y, 64, 64);
   }
 
-  //   bounding() {
-  //     ellipseMode(CORNER);
-  //     stroke(255);
-  //     strokeWeight(1);
-  //     noFill();
+    bounding() {
+      ellipseMode(CORNER);
+      stroke(255,50);
+      strokeWeight(1);
+      noFill();
 
-  //     ellipse(this.x, this.y + 32, 64, 16);
-  //   }
+      rect(this.x, this.y + 32, 64, 16);
+    }
 }

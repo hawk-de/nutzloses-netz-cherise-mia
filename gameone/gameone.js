@@ -570,7 +570,7 @@ function setup() {
       tiles[i] = new Tile(x, row * 61,t);
     }
 
-    for (i = 1072; i <= 1090; i++) {
+    for (i = 1074; i <= 1090; i++) {
       let x = g * size;
       g++;
       t = random(img);
