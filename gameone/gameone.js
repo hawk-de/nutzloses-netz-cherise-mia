@@ -3,7 +3,7 @@ img = [];
 let tiles = [];
 
 function preload() {
-  for (let i = 0; i < 55; i++) {
+  for (let i = 0; i < 63; i++) {
     img[i] = loadImage(`tiles/tile${i}.png`);
   }
 }
@@ -579,7 +579,7 @@ function setup() {
 }
 
 function draw() {
-  background(120);
+  background(70);
 
   for (let i = 1; i < tiles.length; i++) {
     tiles[i].show();
