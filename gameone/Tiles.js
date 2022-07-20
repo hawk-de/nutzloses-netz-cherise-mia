@@ -34,4 +34,6 @@ class Tile {
 
       rect(this.x, this.y + 32, 64, 16);
     }
+
+
 }

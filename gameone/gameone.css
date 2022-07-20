@@ -5,6 +5,7 @@ html {
 body {
   background-color: black;
   display: flex;
+  flex-direction: column;
   margin: 0 0;
   color: #1d2429;
 
@@ -18,11 +19,12 @@ body {
   align-items: center;
   justify-content: center;
 
-  margin-top: 200px;
+  margin-top: 50px;
   margin-bottom: 10vw;
 }
 .flex-item {
   align-self: center;
+  flex-direction: column;
 }
 
 a {
@@ -30,8 +32,6 @@ a {
   justify-content: center;
   color: white;
   text-decoration: none;
-  margin-top: 10vw;
-  margin-bottom: 10vw;
   font-weight: 100;
   font-size: 4vw;
 }
@@ -43,11 +43,23 @@ a:hover {
 
 .text {
   color: red;
-  margin-top: 30px;
-  margin-bottom: 100px;
+
   font-weight: 500;
   font-size: 2vw;
   display: flex;
+
+  justify-content: center;
+  text-align: center;
+  line-height: 200%;
+}
+
+.discription {
+  color: white;
+
+  font-weight: 300;
+  font-size: 1.5vw;
+  display: flex;
+
   justify-content: center;
   text-align: center;
   line-height: 200%;
@@ -75,7 +87,6 @@ a:hover {
   transition: transform 0.3 ease;
 }
 
-.btn-1::after,
 .btn-1::after {
   content: "";
   position: absolute;
