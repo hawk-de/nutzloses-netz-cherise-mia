@@ -35,8 +35,9 @@ class Walls {
   drawwalls() {
     fill("darkred");
     for (let wall of this.walls_list) {
-      rect(wall.x, 0, this.width, wall.height);
-      rect(
+      image(bricks, wall.x, 0, this.width, wall.height);
+      image(
+        bricks,
         wall.x,
         height - GROUND_height,
         this.width,

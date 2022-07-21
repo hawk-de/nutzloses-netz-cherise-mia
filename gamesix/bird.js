@@ -8,7 +8,7 @@ class Bird {
 
   draw() {
     fill("yellow");
-    circle(this.x, this.y, this.size);
+    image(player,this.x, this.y, this.size);
   }
 
   update() {

@@ -7,15 +7,23 @@ const height = 600;
 
 let SCROLL_SPEED = 4;
 let count = 0;
-let bg;
+
+let img;
+let player;
+let bricks;
+let grass;
+
+function preload() {
+  img = loadImage("pixelskynew.png");
+  player = loadImage("birdplayer2.png");
+  bricks = loadImage("brikpik.jpg");
+}
 
 function setup() {
-  bg = loadImage("gamesix/pixelskynew.png");
   createCanvas(width, height);
 }
 
 function getRndInteger(min, max) {
-  // https://www.w3schools.com/js/js_random.asp
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
@@ -23,8 +31,10 @@ let bird = new Bird(width / 2, height / 2, 30);
 let walls = new Walls(60, 150, 130);
 
 function draw() {
-  background(bg);
-  fill("darkgreen");
+  background(img);
+
+  noStroke();
+  fill("green");
   rect(0, height - GROUND_height, width, height);
 
   bird.draw();
@@ -37,7 +47,7 @@ function draw() {
   fill(255);
   textSize(60);
   textAlign(CENTER);
-  text(count, width / 2, height - height / 7);
+  text(count, width * 0.1, height * 0.1);
 }
 
 function keyPressed() {
