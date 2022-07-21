@@ -27,8 +27,8 @@ function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-let bird = new Bird(width / 2, height / 2, 30);
-let walls = new Walls(60, 150, 130);
+let bird = new Bird(width / 2, height / 2,30);
+let walls = new Walls(60, 150, 150);
 
 function draw() {
   background(img);
