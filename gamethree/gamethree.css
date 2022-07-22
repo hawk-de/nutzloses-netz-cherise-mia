@@ -1,17 +1,14 @@
 html {
   font-size: 100%;
-} /*16px*/
+} /16px/
 
 body {
-  background-color: white;
+  background-color: #fff;
   display: flex;
   margin: 0 0;
   color: #1d2429;
 }
-/*
-       see A Complete Guide to Flexbox
-        https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-       */
+
 .container {
   display: flex;
   align-items: center;
