@@ -46,7 +46,7 @@ function draw() {
     text("während er fast über die kleine Stufe am Ausgang stolpert.", 50, 250);
 
     fill(255, 150, 0);
-    rect(250, 350, 500, 80);
+    rect(250, 350, 400, 80);
 
     fill(128);
     textSize(30);

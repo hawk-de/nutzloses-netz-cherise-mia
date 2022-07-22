@@ -16,7 +16,7 @@ class Bird {
     this.vely = lerp(this.vely, grav, 0.05);
     this.y = Math.max(
       this.size / 2,
-      Math.min(this.y, height - GROUND_height - this.size / 2)
+      Math.min(this.y, height - ground_height - this.size / 2)
     );
   }
 

@@ -1,6 +1,6 @@
 const grav = 9.81;
 const JUMP_height = 9.0;
-const GROUND_height = 20;
+const ground_height = 20;
 
 const width = 400;
 const height = 600;
@@ -35,7 +35,7 @@ function draw() {
 
   noStroke();
   fill("green");
-  rect(0, height - GROUND_height, width, height);
+  rect(0, height - ground_height, width, height);
 
   bird.draw();
   bird.update();

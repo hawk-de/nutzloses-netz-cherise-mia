@@ -7,12 +7,12 @@ class Walls {
     this.walls_list = [
       {
         x: 500,
-        height: getRndInteger(this.gap, height - GROUND_height - this.gap),
+        height: getRndInteger(this.gap, height - ground_height - this.gap),
         countd: false,
       },
       {
         x: 500 + this.width + this.frequency,
-        height: getRndInteger(this.gap, height - GROUND_height - this.gap),
+        height: getRndInteger(this.gap, height - ground_height - this.gap),
         countd: false,
       },
     ];
@@ -25,7 +25,7 @@ class Walls {
         wall.x = width;
         wall.height = getRndInteger(
           this.gap,
-          height - GROUND_height - this.gap - this.gap
+          height - ground_height - this.gap - this.gap
         );
         wall.countd = false;
       }
@@ -33,15 +33,15 @@ class Walls {
   }
 
   drawwalls() {
-    fill("darkred");
+  
     for (let wall of this.walls_list) {
       image(bricks, wall.x, 0, this.width, wall.height);
       image(
         bricks,
         wall.x,
-        height - GROUND_height,
+        height - ground_height,
         this.width,
-        -height + wall.height + GROUND_height + this.gap
+        -height + wall.height + ground_height + this.gap
       );
     }
   }
