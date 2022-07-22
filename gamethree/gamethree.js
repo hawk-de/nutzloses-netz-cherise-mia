@@ -12,7 +12,7 @@ let a=0
 
 function setup(){
   frameRate(30)
-createCanvas(1000,1000)
+createCanvas(500,500)
   startbutton = new Button ('CLICK HERE TO START', 95, 100,255,242,0)
   malware = new Button ('//pr3s$ >P< t0 pR1nT;',400, 100,0,242,255)
   for(let i=0;i<50;i++){
