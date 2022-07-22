@@ -81,3 +81,41 @@ function reset() {
   document.getElementById("display").innerHTML = "00:00:00";
   document.getElementById("startStop").innerHTML = "Start";
 }
+
+function oneclick() {
+  document.getElementById("one").hidden =
+    !document.getElementById("one").hidden;
+}
+
+function twoclick() {
+  document.getElementById("two").hidden =
+    !document.getElementById("two").hidden;
+}
+
+function threeclick() {
+  document.getElementById("three").hidden =
+    !document.getElementById("three").hidden;
+}
+
+function fourclick() {
+  document.getElementById("four").hidden =
+    !document.getElementById("four").hidden;
+}
+
+function aclick() {
+  document.getElementById("ac").hidden = !document.getElementById("ac").hidden;
+}
+
+function jclick() {
+  document.getElementById("cj").hidden = !document.getElementById("cj").hidden;
+}
+
+function load() {
+  document.getElementById("one").hidden = true;
+  document.getElementById("two").hidden = true;
+  document.getElementById("three").hidden = true;
+  document.getElementById("four").hidden = true;
+  document.getElementById("cj").hidden = true;
+
+  startStop();
+}

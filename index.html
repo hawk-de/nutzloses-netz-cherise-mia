@@ -19,7 +19,7 @@
 
 <body>
 
-  <body class="bodyclass">
+  <body onload="load()" class="bodyclass">
     <div id="sketch" class="flex-item"></div>
 <script
       src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"
@@ -46,10 +46,7 @@
         00:00:00
     </div>
 
-    <div class="buttons">
-        <button id="startStop" onclick="startStop()">Start</button> 
-    </div>
-
+  
 </div>
  
 <div class="divcounter"><p class="counter">deines Lebens verschwendet.</p></div>
@@ -59,62 +56,43 @@
   <img class="headerIMG" src="main_funny_cat.jfif">
 </div>
 
-<div class="divcounter"><p class="counter">In der Zeit hättest du auch zum Briefkasten gehen können</p></div>
-
 <div class="container">
   <div class="buttons">
-      <a href="gameone/gameone.html" class="btn btn-1">BUILD A CITY</a>
-      <a href="gamethree/gamethree.html" class="btn btn-1">WIN THIS</a>
+   
     
-      <a href="gamefive/gamefive.html" class="btn btn-1">GEH NACH HAUSE</a>
-      <a href="gamesix/gamesix.html" class="btn btn-1">FLATTERVOGEL</a>
+<center>
+    <button onclick="oneclick()" class="btn btn-1">BUILD A CITY </button>
+    <iframe id="one" class="frames" src="gameone/gameone.html" height="1400" width="1024" name="Build a city"></iframe>
+  </center>
+
+  <center>
+    <button onclick="twoclick()" class="btn btn-1">WIN THIS </button>
+    <iframe id="two" class="frames" src="gamethree/gamethree.html" height="1500" width="1024" name="win this"></iframe>
+  </center>
+
+  <center>
+    <button onclick="threeclick()" class="btn btn-1">GEH NACH HAUSE </button>
+    <iframe id="three" class="frames" src="gamefive/gamefive.html" height="400" width="1500" name="geh nach hause"></iframe>
+  </center>
+
+  <center>
+    <button onclick="fourclick()" class="btn btn-1">FLATTERVOGEL </button>
+    <iframe id="four" class="frames" src="gamesix/gamesix.html" height="620" width="600" name="flattervogel"></iframe>
+  </center>
+
+      
 </div></div>
 
 <div class="text">
 WOW, DU MUSST ECHT GELANGWEILT SEIN. HIER SIND NOCH EIN PAAR SPIELE VON ANDEREN MIT DENEN DU DEINE SINNLOSE ZEIT NOCH SINNLOSER GESTALTEN KANNST. DANK MIR SPÄTER.
 </div>
 
-<div>
-  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">NOCH EIN SPIEL</a>
-</div>
-
-<div>
-  <a href="https://krabcode.itch.io/cat-catcher">KATZENSACHEN</a>
-</div>
-
-<div>
-  <a href="https://sweaters.itch.io/birdfeeder">VOGEL FÜTTERN</a>
-</div>
-
-<div>
-  <a href="https://gamelukas.itch.io/dont-spill-your-coffee">KAFFEE</a>
-</div>
-
-<div>
-  <a href="https://banjo-games.itch.io/froggo">FROGGO</a>
-</div>
-
-<div>
-  <a href="https://irionyme.itch.io/dot-survival">BUM BUM</a>
-</div>
-
-<div>
-  <a href="https://sphaericactus.itch.io/alight">AUFRÄUMEN</a>
-</div>
 
 
-<div>
-  <a href="https://hazzzaa.itch.io/forest">GEH MAL RAUS</a>
-</div>
-
-
-<div>
-  <a href="https://fiwiahi.itch.io/pong">PONG</a>
-</div>
-
-<div>
-  <a href="https://theuselessweb.com">TSCHÜSSI</a>
-</div>
+<center>
+  <button onclick="jclick()" class="btn btn-1">TSCHÜSSI </button>
+  <iframe id="cj" class="frames" src="https://theuselessweb.com" height="700" width="1500" name="useless web"></iframe>
+</center>
 
 
 <hr class="linebreak">
