@@ -249,43 +249,24 @@ function draw() {
       50,
       310
     );
-    text("in einem Bett wieder.", 50, 340);
+    text("in einem Bett wieder. Aber du siehst dich von oben. Du stellst fest, dass du tot bist.", 50, 340);
 
     fill(255, 150, 0);
-    rect(50, 370, 300, 80);
+    rect(250, 450, 500, 80);
 
     fill(128);
     textSize(30);
-    text("AUFSPRINGEN", 90, 420);
+    text("CLICK HERE TO RESTART", 300, 500);
 
     if (
       mouseIsPressed &&
-      mouseX > 50 &&
-      mouseX < 350 &&
-      mouseY > 370 &&
-      mouseY < 450
+      mouseX > 250 &&
+      mouseX < 750 &&
+      mouseY > 450 &&
+      mouseY < 530
     ) {
-      mode = 6;
+      mode = 0;
     }
-
-    fill(255, 150, 0);
-    rect(650, 370, 300, 80);
-
-    fill(128);
-    textSize(30);
-    text("WEITERSCHLAFEN", 660, 420);
-
-    if (
-      mouseIsPressed &&
-      mouseX > 650 &&
-      mouseX < 950 &&
-      mouseY > 370 &&
-      mouseY < 450
-    ) {
-      mode = 7;
-    }
-
-    //(6) oder (7)
   }
 
   if (mode == 4) {
@@ -433,96 +414,9 @@ function draw() {
     }
   }
 
-  if (mode == 6) {
-    //(6)   AUFSPRINGEN
+  
 
-    fill(128);
-    textSize(25);
-
-    text("", 50, 70);
-    text("", 50, 100);
-    text("", 50, 130);
-    text("", 50, 160);
-    text("", 50, 190);
-    text("", 50, 220);
-    text("", 50, 250);
-    text("", 50, 280);
-    text("", 50, 310);
-    text("", 50, 330);
-
-    fill(255, 150, 0);
-    rect(250, 450, 500, 80);
-
-    fill(128);
-    textSize(30);
-    text("CLICK HERE TO RESTART", 300, 500);
-
-    if (
-      mouseIsPressed &&
-      mouseX > 250 &&
-      mouseX < 750 &&
-      mouseY > 450 &&
-      mouseY < 530
-    ) {
-      mode = 0;
-    }
-
-    //NEUSTART
-  }
-
-  if (mode == 7) {
-    //(7)   WEITERSCHLAFEN
-
-    fill(128);
-    textSize(25);
-
-    text("", 50, 70);
-    text("", 50, 100);
-    text("", 50, 130);
-    text("", 50, 160);
-    text("", 50, 190);
-    text("", 50, 220);
-    text("", 50, 250);
-    text("", 50, 280);
-    text("", 50, 310);
-    text("", 50, 330);
-
-    fill(255, 150, 0);
-    rect(50, 450, 300, 80);
-
-    fill(128);
-    textSize(30);
-    text("10", 100, 500);
-
-    if (
-      mouseIsPressed &&
-      mouseX > 50 &&
-      mouseX < 350 &&
-      mouseY > 450 &&
-      mouseY < 530
-    ) {
-      mode = 10;
-    }
-
-    fill(255, 150, 0);
-    rect(650, 450, 300, 80);
-
-    fill(128);
-    textSize(30);
-    text("11", 680, 500);
-
-    if (
-      mouseIsPressed &&
-      mouseX > 650 &&
-      mouseX < 950 &&
-      mouseY > 450 &&
-      mouseY < 530
-    ) {
-      mode = 11;
-    }
-
-    //(10) oder (11)
-  }
+  
 
   if (mode == 8) {
     //(8)   COOL BLEIBEN
@@ -701,94 +595,9 @@ function draw() {
     //einschlafen oder nach Hause gehen
   }
 
-  if (mode == 10) {
-    //(10)  WEITERSCHLAFEN
-    fill(128);
-    textSize(25);
+  
 
-    text("", 50, 70);
-    text("", 50, 100);
-    text("", 50, 130);
-    text("", 50, 160);
-    text("", 50, 190);
-    text("", 50, 220);
-    text("", 50, 250);
-    text("", 50, 280);
-    text("", 50, 310);
-    text("", 50, 330);
-
-    fill(255, 150, 0);
-    rect(50, 550, 350, 80);
-
-    fill(128);
-    textSize(30);
-    text("14", 70, 600);
-
-    if (
-      mouseIsPressed &&
-      mouseX > 50 &&
-      mouseX < 400 &&
-      mouseY > 550 &&
-      mouseY < 630
-    ) {
-      mode = 14;
-    }
-
-    fill(255, 150, 0);
-    rect(600, 550, 350, 80);
-
-    fill(128);
-    textSize(30);
-    text("15", 670, 600);
-
-    if (
-      mouseIsPressed &&
-      mouseX > 600 &&
-      mouseX < 950 &&
-      mouseY > 550 &&
-      mouseY < 630
-    ) {
-      mode = 15;
-    }
-
-    //(14) oder (15)
-  }
-
-  if (mode == 11) {
-    //(11)  AUFSPRINGEN
-    fill(128);
-    textSize(25);
-
-    text("", 50, 70);
-    text("", 50, 100);
-    text("", 50, 130);
-    text("", 50, 160);
-    text("", 50, 190);
-    text("", 50, 220);
-    text("", 50, 250);
-    text("", 50, 280);
-    text("", 50, 310);
-    text("", 50, 330);
-
-    fill(255, 150, 0);
-    rect(250, 550, 500, 80);
-
-    fill(128);
-    textSize(30);
-    text("CLICK HERE TO RESTART", 300, 600);
-
-    if (
-      mouseIsPressed &&
-      mouseX > 250 &&
-      mouseX < 750 &&
-      mouseY > 550 &&
-      mouseY < 730
-    ) {
-      mode = 0;
-    }
-
-    //NEUSTART
-  }
+  
 
   if (mode == 12) {
     //(12)  NACH HAUSE GEHEN
@@ -998,94 +807,8 @@ function draw() {
     //katze streicheln oder aufstehen und gehen
   }
 
-  if (mode == 14) {
-    //(14)
-    fill(128);
-    textSize(25);
+ 
 
-    text("", 50, 70);
-    text("", 50, 100);
-    text("", 50, 130);
-    text("", 50, 160);
-    text("", 50, 190);
-    text("", 50, 220);
-    text("", 50, 250);
-    text("", 50, 280);
-    text("", 50, 310);
-    text("", 50, 330);
-
-    fill(255, 150, 0);
-    rect(50, 350, 350, 80);
-
-    fill(128);
-    textSize(30);
-    text("18", 70, 400);
-
-    if (
-      mouseIsPressed &&
-      mouseX > 50 &&
-      mouseX < 400 &&
-      mouseY > 350 &&
-      mouseY < 430
-    ) {
-      mode = 18;
-    }
-
-    fill(255, 150, 0);
-    rect(600, 350, 350, 80);
-
-    fill(128);
-    textSize(30);
-    text("19", 670, 400);
-
-    if (
-      mouseIsPressed &&
-      mouseX > 600 &&
-      mouseX < 950 &&
-      mouseY > 350 &&
-      mouseY < 430
-    ) {
-      mode = 19;
-    }
-
-    //(18) oder (19)
-  }
-
-  if (mode == 15) {
-    //(15)
-    fill(128);
-    textSize(25);
-
-    text("", 50, 70);
-    text("", 50, 100);
-    text("", 50, 130);
-    text("", 50, 160);
-    text("", 50, 190);
-    text("", 50, 220);
-    text("", 50, 250);
-    text("", 50, 280);
-    text("", 50, 310);
-    text("", 50, 330);
-
-    fill(255, 150, 0);
-    rect(250, 650, 500, 80);
-
-    fill(128);
-    textSize(30);
-    text("CLICK HERE TO RESTART", 400, 700);
-
-    if (
-      mouseIsPressed &&
-      mouseX > 250 &&
-      mouseX < 750 &&
-      mouseY > 650 &&
-      mouseY < 730
-    ) {
-      mode = 0;
-    }
-
-    //NEUSTART
-  }
 
   if (mode == 16) {
     //(16)  AUFSTEHEN UND GEHEN
@@ -1273,166 +996,6 @@ function draw() {
     //NEUSTART
   }
 
-  if (mode == 18) {
-    //(18)
-    fill(128);
-    textSize(25);
-
-    text("", 50, 70);
-    text("", 50, 100);
-    text("", 50, 130);
-    text("", 50, 160);
-    text("", 50, 190);
-    text("", 50, 220);
-    text("", 50, 250);
-    text("", 50, 280);
-    text("", 50, 310);
-    text("", 50, 330);
-
-    fill(255, 150, 0);
-    rect(250, 550, 500, 80);
-
-    fill(128);
-    textSize(30);
-    text("WEITERLESEN", 300, 600);
-
-    if (
-      mouseIsPressed &&
-      mouseX > 250 &&
-      mouseX < 750 &&
-      mouseY > 550 &&
-      mouseY < 730
-    ) {
-      mode = 7;
-    }
-
-    //BACK TO (7) oder (3)
-  }
-
-  if (mode == 19) {
-    //(19)
-    fill(128);
-    textSize(25);
-
-    text("", 50, 70);
-    text("", 50, 100);
-    text("", 50, 130);
-    text("", 50, 160);
-    text("", 50, 190);
-    text("", 50, 220);
-    text("", 50, 250);
-    text("", 50, 280);
-    text("", 50, 310);
-    text("", 50, 330);
-
-    fill(255, 150, 0);
-    rect(50, 450, 300, 80);
-
-    fill(128);
-    textSize(30);
-    text("20", 100, 500);
-
-    if (
-      mouseIsPressed &&
-      mouseX > 50 &&
-      mouseX < 350 &&
-      mouseY > 450 &&
-      mouseY < 530
-    ) {
-      mode = 20;
-    }
-
-    fill(255, 150, 0);
-    rect(650, 450, 300, 80);
-
-    fill(128);
-    textSize(30);
-    text("21", 680, 500);
-
-    if (
-      mouseIsPressed &&
-      mouseX > 650 &&
-      mouseX < 950 &&
-      mouseY > 450 &&
-      mouseY < 530
-    ) {
-      mode = 21;
-    }
-
-    //(20) oder (21)
-  }
-
-  if (mode == 20) {
-    //(20)
-    fill(128);
-    textSize(25);
-
-    text("", 50, 70);
-    text("", 50, 100);
-    text("", 50, 130);
-    text("", 50, 160);
-    text("", 50, 190);
-    text("", 50, 220);
-    text("", 50, 250);
-    text("", 50, 280);
-    text("", 50, 310);
-    text("", 50, 330);
-
-    fill(255, 150, 0);
-    rect(250, 350, 500, 80);
-
-    fill(128);
-    textSize(30);
-    text("WEITERLESEN", 300, 400);
-
-    if (
-      mouseIsPressed &&
-      mouseX > 250 &&
-      mouseX < 750 &&
-      mouseY > 350 &&
-      mouseY < 430
-    ) {
-      mode = 18;
-    }
-
-    //NEUSTART
-  }
-
-  if (mode == 21) {
-    //(21)
-    fill(128);
-    textSize(25);
-
-    text("", 50, 70);
-    text("", 50, 100);
-    text("", 50, 130);
-    text("", 50, 160);
-    text("", 50, 190);
-    text("", 50, 220);
-    text("", 50, 250);
-    text("", 50, 280);
-    text("", 50, 310);
-    text("", 50, 330);
-
-    fill(255, 150, 0);
-    rect(250, 550, 500, 80);
-
-    fill(128);
-    textSize(30);
-    text("CLICK HERE TO RESTART", 300, 600);
-
-    if (
-      mouseIsPressed &&
-      mouseX > 250 &&
-      mouseX < 750 &&
-      mouseY > 550 &&
-      mouseY < 730
-    ) {
-      mode = 0;
-    }
-
-    //NEUSTART
-  }
 
   if (mode == 22) {
     //(22)  HAUPTSTRA?E
