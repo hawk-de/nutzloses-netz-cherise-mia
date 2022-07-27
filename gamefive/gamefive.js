@@ -1,4 +1,4 @@
-let mode;
+{{let mode;
 let w = 1000;
 let h = 1000;
 
@@ -1661,3 +1661,4 @@ function draw() {
     //NEUSTART
   }
 }
+}}
