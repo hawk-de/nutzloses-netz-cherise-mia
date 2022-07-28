@@ -115,13 +115,21 @@ function jclick() {
   document.getElementById("cj").hidden = !document.getElementById("cj").hidden;
 }
 
+function aboutclick() {
+  document.getElementById("about").hidden =
+    !document.getElementById("about").hidden;
+}
+
+
+
 function load() {
   document.getElementById("one").hidden = true;
   document.getElementById("two").hidden = true;
   document.getElementById("three").hidden = true;
   document.getElementById("four").hidden = true;
-
+  document.getElementById("about").hidden = true;
   document.getElementById("cj").hidden = true;
+
 
   startStop();
 }
