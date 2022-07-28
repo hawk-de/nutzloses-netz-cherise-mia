@@ -102,6 +102,11 @@ function fourclick() {
     !document.getElementById("four").hidden;
 }
 
+function fiveclick() {
+  document.getElementById("ive").hidden =
+    !document.getElementById("five").hidden;
+}
+
 function aclick() {
   document.getElementById("ac").hidden = !document.getElementById("ac").hidden;
 }
@@ -115,6 +120,7 @@ function load() {
   document.getElementById("two").hidden = true;
   document.getElementById("three").hidden = true;
   document.getElementById("four").hidden = true;
+
   document.getElementById("cj").hidden = true;
 
   startStop();
