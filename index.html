@@ -1,26 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Starter</title>
-    <meta name="description" content="something" />
-    <meta name="author" content="me" />
-    <link href="style.css" rel="stylesheet"/>
-    <style>
 
-    </style>
-  </head>
-  <body class="container">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>YOU WASTE YOUR TIME</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;200;300;400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <body onload="load()" class="bodyclass">
     <div id="sketch" class="flex-item"></div>
-    <script
+<script
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"
+      integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    
+    <script src="index.js"></script>
+
+
+  
+  <div class="divheadline"><h1 class="headline"><br>YOU WASTE YOUR TIME</h1></div>
+
+  <div class="divcounter"><p class="counter">Du hast schon</p></div>
+
+
+
+
+  <div class="timer">
+
+    <div id="display">
+        00:00:00
+    </div>
+
+  
+</div>
+ 
+<div class="divcounter"><p class="counter">deines Lebens verschwendet.</p></div>
+
+
+<div class="IMGcontainer">
+  <img class="headerIMG" src="main_funny_cat.jfif">
+</div>
+
+<div class="container">
+  <div class="buttons">
+   
+    <center>
+      <button onclick="aboutclick()" class="btn btn-1">ABOUT THIS WEBSITE</button>
+      <iframe id="about" class="frames" src="abouttt.html" height="600" width="1500" name="Build a city"></iframe>
+    </center>
+
+<center>
+    <button onclick="oneclick()" class="btn btn-1">BUILD A CITY </button>
+    <iframe id="one" class="frames" src="gameone/gameone.html" height="1400" width="1024" name="Build a city"></iframe>
+  </center>
+
+  <center>
+    <button onclick="twoclick()" class="btn btn-1">WIN THIS </button>
+    <iframe id="two" class="frames" src="gamethree/gamethree.html" height="1050" width="1050" name="win this"></iframe>
+  </center>
+
+  <center>
+    <button onclick="threeclick()" class="btn btn-1">GEH NACH HAUSE </button>
+    <iframe id="three" class="frames" src="gohome.html" height="800" width="1500" name="geh nach hause"></iframe>
+  </center>
+
+  <center>
+    <button onclick="fourclick()" class="btn btn-1">FLATTERVOGEL </button>
+    <iframe id="four" class="frames" src="gamesix/gamesix.html" height="620" width="1000" name="flattervogel"></iframe>
+  </center>
+
+  
+
+      
+</div></div>
+
+<div class="text">
+WOW, DU MUSST ECHT GELANGWEILT SEIN. HIER SIND NOCH EIN PAAR SPIELE VON ANDEREN MIT DENEN DU DEINE SINNLOSE ZEIT NOCH SINNLOSER GESTALTEN KANNST. DANK MIR SPÄTER.
+</div>
+
+
+
+<center>
+  <button onclick="jclick()" class="btn btn-1">TSCHÜSSI </button>
+  <iframe id="cj" class="frames" src="https://theuselessweb.com" height="700" width="1500" name="useless web"></iframe>
+</center>
+
+<!--
+<center>
+  <button onclick="Galerieclick()" class="btn btn-1">Galerie</button>
+  <iframe id="Galerie" class="frames" src="Galerie/Galerie.html" height="620" width="1500" name="flattervogel"></iframe>
+</center>
+-->
+
+<hr class="linebreak">
+
+<div class="Information">
+  <p>This is a project from MiaMogl & Cherise for Generative Gestaltungs Kurs at HAWK</p>
+</div>
+
+<div class="Information">
+  <p>2022 Hildesheim</p>
+</div>
+
+  <body class="bodyclass">
+    <div id="sketch" class="flex-item"></div>
+<script
       src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"
       integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
     <script src="index.js"></script>
-  </body>
+
+
+
+</body>
+
 </html>
